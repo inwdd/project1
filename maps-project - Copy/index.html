@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <link rel="stylesheet" href="/lib/leaflet/leaflet-measure.css">
+    <link href='/lib/leaflet/leaflet.fullscreen.css' rel='stylesheet' />
+    
+    <link rel="stylesheet" href="/lib/leaflet/leaflet-search.css" />
+    <link rel="stylesheet" href="/lib/leaflet/appstyles.css">
+
+    
+    <title>Maps Project</title>
+
+    <style>
+        #mapid{
+        width: 75%;
+        height: 93vh;
+
+        /*
+            height: 650px;
+            width: 90%;
+            margin: 5rem auto;
+        */
+        }
+
+        .coordinate {
+            background-color: white;
+            padding: 10px;
+            padding-top: 2px;
+            border-color: red;
+            font-family: proxima nova;
+            width: 350px;
+            height: 100px;
+            font-size: 24px;
+            color: black;
+            position: relative;
+            bottom: 200px;
+            left: 95px;
+        }
+
+        .leaflet-tooltip-content {
+            font-family: 'proxima nova';
+        }
+
+        /* Popup Content Box  */
+
+        .leaflet-popup-content-wrapper {
+            /*width: 81px;*/
+            border-radius: 5px;
+        }
+
+        /* Popup Content Text  */
+
+        .leaflet-popup-content {
+            font-family: 'proxima nova';
+            padding: 0;
+            margin: 5px;
+            margin-bottom: 0px;
+            margin-top: 4px;
+
+        }
+
+        /*  Popup Box Tip */
+
+        .leaflet-popup-tip {
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .leaflet-marker-pane {
+        }
+
+        .leaflet-marker-pane:hover {
+        }
+        
+        /* Hover Effect/with ShadowIcon  */
+
+        .leaflet-marker-icon {
+            opacity: 0%;
+        }
+
+        .leaflet-marker-icon:hover {
+            opacity: 100%;
+        }
+
+        .icon1:hover{
+        }
+
+        /* Layers Control Box  */
+
+        .leaflet-control-layers-expanded {
+            font-family: 'proxima nova';
+        }
+        
+    </style>
+
+
+</head>
+<body>
+
+<main>
+    <div class="project-sites">  
+        <div class="heading">
+            <h2>Our Project Sites</h2>
+            
+        </div>
+        <ul class="list">
+
+        </ul>
+    
+    </div>
+    <div id="mapid">  
+        Right Side
+    </div>
+</main>
+
+    <script src="./lib/leaflet/leaflet-measure.js"></script>
+    <script src="./lib/leaflet/leaflet.browser.print.min.js"></script>
+    <script src='/lib/leaflet/Leaflet.fullscreen.js'></script>
+    <script src="data/polyygon.js"></script>
+    <script src="data/circleee.geojson"></script>
+    <script src="lib/leaflet/appstores.js"></script>
+    <script src="lib/leaflet/app.js"></script>
+
+
+    <div id="mapid"></div>
+    <script src="main.js"></script>
+
+
+    <script>
+
+        //Leaflet Events LatLng Function
+/*
+mymap.on('mousemove', function (e) {
+    document.getElementsByClassName('coordinate')[0].innerHTML = 'lat: ' + e.latlng.lat, 'lng: ' + e.latlng.lng;
+})
+
+*/
+
+    //Leaflet Measure
+
+//    L.control.measure().addTo(mymap);
+
+
+
+    </script>
+
+
+</body>
+</html>
